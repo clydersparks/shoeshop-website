@@ -1,0 +1,179 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  font-family: 'roboto';
+}
+
+header{
+  width: 100%;
+  height: 150px;
+  
+  background-color: rgba(20, 137, 158, 0.986);
+}
+
+.logo{
+  height: 100px;
+  width: 50%;
+
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo h1{
+  font-weight: 900;
+  color: rgb(12, 47, 99);
+}
+
+img{
+  height: 60px;
+  margin: 0 auto;
+  
+}
+
+.bar{
+  height: 35px;
+  width: 35px;
+  border: 1px solid black;
+  padding: 2px;
+  cursor: pointer;
+  position: absolute;
+  display: none;
+}
+
+.bars{
+  height: 6px;
+  width: 100%;
+  border: 1px solid black;
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+nav{
+  width: 100%;
+  height: 50px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+ul{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+ul li{
+  list-style: none;
+  margin: 0 15px;
+}
+
+ul li a{
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: rgb(12,47,99);
+  transition: .5s;
+}
+
+ul li a:hover{
+  color: white;
+}
+
+.latest{
+  width: 100%;
+  height: 420px;
+  background-color: rgba(5, 111, 153, 0.836);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4px;
+  margin-right: 2px;
+
+}
+
+.stock{
+  width: 100%;
+  height: 400px;
+ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.stocks{
+ 
+  box-shadow: 3px 8px 2px rgba(0,0,0,0.5);
+  height: 150px;
+  width: 45%;
+  border-radius: 4px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.all{
+  padding: 10px;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  color: rgb(12, 47, 99);
+ 
+}
+
+.all-div{
+  padding: 5px;
+  width: 95%;
+  
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.all-stock{
+  height: 170px;
+  box-shadow: 0px 5px 3px rgba(143, 137, 137, 0.877);
+  border-radius: 4px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+.buttons{
+  width: 100%;
+  padding: 10px;
+  align-items: center;
+  border: 1px solid black;
+  background-color: rgb(12,47,99);
+  align-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+button{
+  padding: 15px;
+  width: 30%;
+  border-radius: 4px;
+  border: none;
+  font-size: 12px;
+  background: black;
+  color: rgb(7, 61, 131);
+  cursor: pointer;
+}
+
+button:nth-child(2){
+  background:rgba(5, 111, 153, 0.945);
+}
+

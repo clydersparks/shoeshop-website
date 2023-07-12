@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="shoe.css" />
+    <title>Shoe Shop</title>
+  </head>
+  <body>
+    <header>
+      <div class="bar">
+        <div class="bars"></div>
+        <div class="bars"></div>
+        <div class="bars"></div>
+      </div>
+      <div class="logo">
+        <img src="nikenobg.png" alt="this is my logo" />
+        <h1>Niko</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="brands.html">Brands</a></li>
+          <li><a href="coming.html">Comings soon</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="latest">
+        <h2>Latest Stock</h2>
+        <div class="stock">
+          <div class="stocks"></div>
+          <div class="stocks"></div>
+          <div class="stocks"></div>
+          <div class="stocks"></div>
+        </div>
+      </div>
+
+      <div class="all">
+        <h2>All Shoes</h2>
+        <div class="all-div">
+          <div class="all-stock"></div>
+          <div class="all-stock"></div>
+          <div class="all-stock"></div>
+          <div class="all-stock"></div>
+          <div class="all-stock"></div>
+          <div class="all-stock"></div>
+          <div class="all-stock"></div>
+          <div class="all-stock"></div>
+          <div class="all-stock"></div>
+          <div class="all-stock"></div>
+          <div class="all-stock"></div>
+          <div class="all-stock"></div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button>Previous Page</button>
+        <button>Next Page</button>
+      </div>
+     
+    </main>
+  </body>
+  <script>
+    let boxes = document.querySelectorAll(".stocks");
+    let stock = document.querySelectorAll('.all-stock');
+
+    let myShoes = [
+    "j1blue.jpg",
+    "j1yello2small.jpg",
+    "sneakers.jpg",
+    "black.jpg"
+  ];
+
+  let secondShoes = [
+    '1.jpg',
+    '2.jpg',
+    '3.jpg',
+    '4.jpg',
+    '5.jpg',
+    '6.jpg',
+    '7.jpg',
+    '8.jpg',
+    '9.jpg',
+    '10.jpg',
+    '11.jpg',
+    '12.jpg',
+  
+  ];
+
+  for(let i = 0; i < boxes.length; i++){
+    for(let j = 0; j < myShoes.length; j++){
+      boxes[j].style.backgroundImage = boxes[i].style.backgroundImage = `url('${myShoes[j]}')`;
+    }
+  }
+
+  for(let i = 0; i < stock.length; i++){
+    for(let j = 0; j < secondShoes.length; j++){
+      stock[j].style.backgroundImage = stock[i].style.backgroundImage = `url('${secondShoes[j]}')`;
+    }
+  }
+  </script>
+</html>
